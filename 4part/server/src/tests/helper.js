@@ -70,3 +70,16 @@ export const blogs = [
     likes: 2,
   },
 ];
+
+export const users = [
+  {
+    name: "Juan Diego Garzon Becerra",
+    password: "sekret",
+    username: "jdiego",
+  },
+  {
+    name: "Sara Bernal Florez",
+    password: "sekret",
+    username: "sbernal",
+  },
+];

@@ -1,26 +1,29 @@
-POST http://localhost:3000/api/blogs
-content-type: application/json
+POST http://localhost:3000/api/blogs/
+Content-Type: application/json
+Authorization: Bearer 
 
 {
-  "title": "React patterns",
-    "author": "Michael Chan",
-    "url": "https://reactpatterns.com/",
-    "likes": "7"
+  "title": "Test de Sara",
+    "author": "Sara Bernal",
+    "url": "https://reactpatterns.com/"
 }
-
-####
-
-POST http://localhost:3000/api/blogs
-content-type: application/json
+###
+POST http://localhost:3000/api/users/
+Content-Type: application/json
 
 {
-  "title": "React patterns",
-    "author": "Michael Chan"
+"name":"Juan Diego Garzon Becerra",
+"password": "sekret",
+ "username": "jdiego"
 }
 
-####
-DELETE http://localhost:3000/api/blogs/66fcbbc8fac81a93fc65a015
 
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
 
-####
-DELETE http://localhost:3000/api/blogs/66fcb62e162c04468582418d
+{
+"name":"Sara Bernal",
+"password": "sekret",
+ "username": "sbernal"
+}
